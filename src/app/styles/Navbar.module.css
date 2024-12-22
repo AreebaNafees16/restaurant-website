@@ -1,0 +1,323 @@
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+  }
+  
+  .logobox {
+    width: 30px;
+    height: 30px;
+    background-color: #39DB4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    margin-right: 3px;
+  }
+  
+  .logof {
+    font-family: 'Cursive', sans-serif; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .logotext {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .navlinks {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navlinks a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    transition: color 0.3s;
+  }
+  
+  .navlinks a:hover {
+    color: #39DB4A;
+  }
+  
+  .navactions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .iconbutton {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s;
+  }
+  
+  .iconbutton:hover {
+    color: green;
+  }
+  
+  .contactbutton {
+    background-color: #39DB4A;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline-color: 2px solid #39DB4A;
+    outline-offset: 2px;
+    transition: background-color 0.3s, outline-color 0.3s;
+  }
+  
+  .contactbutton:hover {
+    outline-color: #39DB4A;
+    background-color: green;
+  }
+   */
+.navbar {
+  position: fixed;/* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;/* Full width */
+  z-index: 1000;/* Keep it above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logobox {
+  width: 30px;
+  height: 30px;
+  background-color: #39DB4A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+  margin-right: 2px;
+}
+
+.logof {
+  font-family: 'Cursive', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logotext {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.navlinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navlinks a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  transition: color 0.3s;
+}
+
+.navlinks a:hover {
+  color: #39DB4A;;
+}
+
+.navactions {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.iconbutton {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
+}
+
+.iconbutton:hover {
+  color: green;
+}
+
+.contactbutton {
+  background-color: #39DB4A;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.contactbutton:hover {
+  background-color: green;
+}
+
+/* Icon button with badge */
+.iconbuttonWithBadge {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
+}
+
+.iconbuttonWithBadge:hover {
+  color: green;
+}
+
+/* Badge Styling */
+.badge {
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  background-color: #39DB4A;
+  color: white;
+  font-size: 0.60rem;
+  font-weight: bold;
+  padding: 1px 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Show hamburger icon on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px; /* Position the hamburger icon to the right */
+    top: 15px;   /* Adjust top position to match the navbar */
+    cursor: pointer;
+  }
+
+  .navlinks {
+    display: none; /* Hide navigation links on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navlinks a:hover {
+    color: #39DB4A;;
+  }
+
+  .navlinks.show {
+    display: flex; /* Show links when menu is open */
+  }
+
+  .navlinks a {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .navactions {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align all actions to the right */
+    width: 100%;
+  }
+
+  /* Adjust the contact button and hamburger icon layout */
+  .contactbutton {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    margin-right: 30px; /* Add a little space between contact button and hamburger */
+  }
+
+  .iconbutton, .iconbuttonWithBadge {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    padding-left: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.6rem 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .logotext {
+    font-size: 1rem; /* Smaller logo text */
+  }
+
+  .logobox {
+    width: 25px;
+    height: 25px; /* Smaller logo box */
+  }
+
+  .badge {
+    top: -5px;
+    right: -3px; /* Adjust badge position for smaller icons */
+    font-size: 0.5rem;
+  }
+}

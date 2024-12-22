@@ -1,0 +1,156 @@
+
+  .offersContainer {
+    background-color: var(--white);
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+  }
+  
+  /* Top Section */
+  .topSection {
+    text-align: center;
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+  }
+  
+  .pageTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+  }
+  
+  .pageSubtitle {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Offer Listings Section */
+  .offersSection {
+    padding: 4rem 2rem;
+  }
+  
+  .offerItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .offerImage {
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 2rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .offerItem:hover .offerImage {
+    transform: scale(1.05);
+  }
+  
+  .offerText {
+    flex: 1;
+  }
+  
+  .offerTitle {
+    font-size: 2rem;
+    color: var(--dark-gray);
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .offerDescription {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+  }
+  
+  .learnMore {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--light-green);
+    font-weight: bold;
+    border-bottom: 2px solid var(--light-green);
+    transition: all 0.3s ease;
+  }
+  
+  .learnMore:hover {
+    color: var(--green-darker);
+    border-color: var(--green-darker);
+  }
+  
+  /* CTA Section */
+  .ctaSection {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 2px solid var(--light-green);
+    position: relative;
+  }
+  
+  .ctaHeading {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .ctaText {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+  }
+  
+  .ctaButton {
+    padding: 1.2rem 4rem;
+    background-color: var(--light-green);
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: green;
+    color: var(--white);
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+  .offersSection {
+    padding: 0;
+  }
+
+  .offersContainer {
+    padding: 0.2;
+  }
+    .pageTitle {
+      font-size: 2.5rem;
+    }
+  
+    .offerTitle {
+      font-size: 1.8rem;
+    }
+  
+    .offerItem {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .offerImage {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .ctaButton {
+      font-size: 1.1rem;
+      padding: 1rem 3.5rem;
+    }
+  }
+  

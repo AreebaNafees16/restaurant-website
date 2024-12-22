@@ -1,0 +1,230 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    height: 70vh;
+    gap: 2rem;
+  }
+  
+  /* Left Side */
+  .leftSide {
+    max-width: 40%;
+    margin-left: 40px;
+  }
+  
+  .miniHeading {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #FF6868;
+    margin-bottom: 2rem;
+  }
+  
+  .mainHeading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .exploreButton {
+    background-color: #39db4a;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .exploreButton:hover {
+    background-color: green;
+  }
+  
+  /* Right Side */
+  .rightSide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-right: 200px;
+    margin-top: -50px;
+    /* flex: 1; */
+    /* margin-left: 80px; */
+    /* width: 0%; */
+
+  }
+  
+  .card {
+    width: 200px;
+    height: 230px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    flex: 0.1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .cardIcon {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .cardName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #39db4a;
+  }
+  
+  .cardDescription {
+    font-size: 1rem;
+    color: #90BD95;
+  }
+  
+
+
+/* Responsive Styles */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .leftSide {
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .mainHeading {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .rightSide {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .card {
+    width: 180px;
+    height: 210px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+    height: 100vh;
+  }
+
+  .mainHeading {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+
+  .rightSide {
+    grid-template-columns: repeat(2fr);
+    gap: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .cardIcon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cardName {
+    font-size: 1rem;
+  }
+
+  .cardDescription {
+    font-size: 0.85rem;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 2rem;
+    height: 130vh;
+  }
+
+  .mainHeading {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .exploreButton {
+    padding: 0.7rem 1.6rem;
+    font-size: 1rem;
+  }
+
+  .rightSide {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 10px;
+  }
+
+  .cardIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cardName {
+    font-size: 1rem;
+  }
+
+  .cardDescription {
+    font-size: 0.80rem;
+  }
+}

@@ -1,0 +1,420 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  height: 100vh;
+  margin-left: 30px;
+  position: relative;
+}
+
+.heroContent {
+  max-width: 50%;
+  padding-top: 50px;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.food {
+  color: #39db4a;
+}
+
+.heroSubtitle {
+  margin: 1rem 0;
+  color: #555;
+  padding-bottom: 0.1rem;
+}
+
+.heroSubtitle1 {
+  margin: 1rem 0;
+  color: #555;
+  padding-bottom: 2rem;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.orderButton {
+  background-color: #39db4a;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.orderButton:hover {
+  background-color: green; /* Change color on hover */
+  box-shadow: 0 4px 12px rgba(11, 223, 14, 0.2); /* Add shadow on hover */
+}
+
+.videoButton {
+  background-color: white;
+  border: 2px solid #39db4a;
+  color: black;
+  font-size: 1rem;
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.videoButton:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.playIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.heroImageWrapper {
+  position: relative;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.greenCircle {
+  position: relative;
+  background-color: #39db4a;
+  border-radius: 50%;
+  width: 400px; /* Smaller circle size */
+  height: 400px; /* Smaller circle size */
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 9px;
+  padding-right: 80px;
+  padding-bottom: 128px;
+  top: 50px;
+  /* overflow: hidden; */
+   margin: 10px 50px;
+}
+
+
+.heroImageWrapper img {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  object-fit: cover;
+  border-radius: 50%; 
+
+}
+.messagePopup {
+  position: absolute;
+  top: 50px; 
+  left: -100px; 
+  background-color: white;
+  color: #FF6868;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem; 
+}
+
+/* Bottom Tip Styling */
+.messagePopup::after {
+  content: '';
+  position: absolute;
+  bottom: -9px; /* Position the tip below the popup */
+  left: 90%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the tip */
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid white; /* Tip color matches popup background */
+}
+
+/* Chili Icon */
+.chiliIcon {
+  width: 30px; /* Adjust the chili image size */
+  height: 30px;
+  flex-shrink: 0;
+  left: 50%;
+  justify-content: space-between; 
+  margin-left: auto;
+  object-fit: contain;
+}
+
+.cards {
+  position: absolute;
+  left: 78%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2.5rem;
+}
+.img {
+  border-radius: 10px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  background-color: #ffff;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.6rem;
+  align-items: center;
+  width: 230px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rating {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.card h4 {
+  margin: 0;
+  color: #2C2C2C;
+}
+
+.card p {
+  color: #FF7979;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card span {
+  color: #515151;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding-right: 40px;
+    flex-direction: column; 
+    text-align: left; 
+    margin-left: 1px;
+    
+  }
+
+  .heroContent {
+    max-width: 100%; 
+    padding-top: 90px;
+    margin-right: 80px;
+    
+  }
+
+  .heroImageWrapper img {
+    padding-top: 30px;
+    height: 200px;
+    width: 200px;
+    max-width: 70%; 
+  }
+
+  .greenCircle {
+    width: 2000px;
+    height: 1000px;
+  }
+
+  .cards {
+    gap: 2rem; 
+    justify-content: center; 
+    bottom: -200px;  
+    position: absolute;
+    padding-right: 150px;
+    transform: translateX(-100%);
+    margin-left: 180px;
+    display: flex;
+  
+  }
+
+  .card {
+    align-items: center;
+    padding: 0.8rem;
+
+  }
+  .heroTitle {
+    font-size: 4rem; 
+    padding-bottom: 1rem;
+  }
+
+  .orderButton, .videoButton {
+    font-size: 0.9rem; 
+    padding: 0.8rem 1.5rem;
+    margin-bottom: 80px;
+  }
+
+  /* .hero {
+    padding: 1.5rem;
+    flex-direction: column;
+    text-align: left;
+  } */
+
+  .heroContent, .heroImageWrapper {
+    max-width: 100%;
+  }
+
+  .greenCircle {
+    width: 400px;
+    height: 400px;
+  }
+
+  .heroImageWrapper img {
+    width: 80%;
+    height: 80%;
+  }
+
+ 
+
+  .messagePopup {
+    font-size: 0.8rem;
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .heroTitle {
+    font-size: 4rem;
+  }
+
+  .heroSubtitle, .heroSubtitle1 {
+    font-size: 1rem; 
+  }
+
+  .greenCircle {
+    width: 550px;
+    height: 550px; 
+  }
+
+  .orderButton, .videoButton {
+    padding: 0.6rem 1rem; 
+  }
+
+  .cards {
+    gap: 2rem;
+    justify-content: center; 
+    bottom: -100px;  
+    position: absolute;
+    margin-left: 20px;
+    /* right: 50%; */
+    display: flex;
+  
+  }
+
+  .card {
+    width: 170px; 
+    align-items: center;
+    padding: 0.4rem;
+
+  }
+
+  .card h4 {
+    font-size: 0.9rem; 
+  }
+
+  .card p, .card span {
+    font-size: 0.8rem; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .hero {
+    height: 90vh;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .heroSubtitle {
+    text-align: left;
+  }
+
+  .heroSubtitle1 {
+    text-align: left;
+  }
+  
+  .orderButton, .videoButton {
+    padding: 0.7rem 2rem; 
+    font-size: 1rem;
+  }
+
+  .greenCircle {
+    width: 400px;
+    height: 400px;
+  }
+
+  .heroImageWrapper img {
+    width: 70%;
+    height: 70%;
+  }
+
+  /* .cards {
+    width: 200px;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 15px;
+    transform: translateX(-90%);
+  } */
+  
+
+  .messagePopup {
+    font-size: 0.6rem;
+    top: 10px;
+    left: -10%;
+  }
+
+  .chiliIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .cards {
+    width: 200px;
+    display: flex;
+    gap: 1rem;
+    bottom: -150px;
+    transform: translateX(-90%);
+  }
+
+  .messagePopup {
+    font-size: 0.6rem;
+    top: 10px;
+    left: -10%;
+  }
+
+  .chiliIcon {
+    width: 20px;
+    height: 20px;
+  }
+}

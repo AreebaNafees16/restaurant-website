@@ -1,0 +1,375 @@
+.testimonialSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85vh;
+    padding: 3rem;
+    gap: 2rem;
+    /* background-color: #f9f9f9; */
+  }
+  
+  .leftSide {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imageWrapper {
+    width: 300px;
+    height: 230px;
+    background-color: #39db4a;
+    border-radius: 10%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .customerImage {
+    width: 300px;
+    height: 450px;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 220px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+  }
+  
+  .messagePopup {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    background-color: #fff;
+    color: #202020;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0.5rem;
+    border-radius: 30px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .messagePopup::after {
+    content: '';
+    position: absolute;
+    top: -20px; /* Position the tip below the popup */
+    left: 5%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the tip */
+    width: 2px;
+    height: 10px;
+    border-left: 0px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid white; /* Tip color matches popup background */
+  }
+  
+  .emojis {
+    display: flex;
+    top: 30px;
+    left: 50%;
+    position: absolute;
+    justify-content: space-between;
+    width: 330px;
+    margin-top: 2rem;
+    transform: translateX(-50%);
+    /* margin-bottom: 3rem; */
+  }
+  
+  .emoji {
+    font-size: 1.5rem;
+  }
+  
+  .rightSide {
+    flex: 1;
+    margin-bottom: 70px;
+  }
+  
+  .miniHeading {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #FF6868;
+    margin-bottom: 2rem;
+  }
+  
+  .mainHeading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .paragraph {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .feedback {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* margin-bottom: 1rem; */
+  }
+  
+  .testimonialImages {
+    display: flex;
+    margin-top: 20px;
+    gap: 0.5rem;
+  }
+  
+  .roundedImage {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .feedbackText {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0px;
+  }
+
+.rating {
+  color: #000;
+  margin-left: 170px;
+  margin-top: -10px; /* Move upwards */
+}
+
+  .reviews {
+    font-size: 1rem;
+    color: #807E7E;
+    margin-left: 10px;
+    margin-top: -20px; /* Move upwards */
+    gap: 1rem;
+  }
+  
+
+
+/* Responsive Styles */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .testimonialSection {
+    height: 130vh;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  .leftSide {
+  margin-top: 26rem;
+  }
+
+  .imageWrapper {
+    width: 250px;
+    height: 200px;
+  }
+
+  .customerImage {
+    width: 250px;
+    height: 350px;
+    margin-bottom: 150px;
+  }
+
+  .emojis {
+    width: 250px;
+  }
+
+  .mainHeading {
+    font-size: 1.8rem;
+  }
+
+  .miniHeading {
+    font-size: 0.9rem;
+  }
+
+  .paragraph {
+    font-size: 0.95rem;
+  }
+  
+
+  .messagePopup{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    background-color: #fff;
+    color: #202020;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    width: 12rem;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .messagePopup::after {
+    content: '';
+    position: absolute;
+    top: -20px; /* Position the tip below the popup */
+    left: 5%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the tip */
+    width: 2px;
+    height: 10px;
+    border-left: 0px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid white; /* Tip color matches popup background */
+  }
+  
+  .roundedImage {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feedbackText {
+    font-size: 0.9rem;
+  }
+  .emojis {
+    width: 270px;
+  }
+
+  .rating {
+    margin-left: 140px;
+  }
+  .reviews {
+  margin-right: -20px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .testimonialSection {
+    align-items: center;
+    height: 90vh;
+    padding: 1.5rem;
+  }
+
+  .imageWrapper {
+    width: 260px;
+    height: 210px;
+  }
+
+  .rightSide {
+    text-align: center;
+  }
+  .customerImage {
+    width: 250px;
+    height: 370px;
+    margin-bottom: 160px;
+  }
+
+  .emojis {
+    width: 290px;
+  }
+
+  .mainHeading {
+    font-size: 1.6rem;
+  }
+
+  .miniHeading {
+    font-size: 0.85rem;
+  }
+
+  .messagePopup {
+    font-size: 0.9rem;
+    padding: 0.6rem ;
+    bottom: 39px;
+    width: 60%; /* Expand to fit the smaller screen */
+    left: 50%;   /* Adjust horizontal positioning */
+    transform: none; /* Remove centering transform for small screens */
+  }
+
+  .rating {
+    margin-left: 135px;
+  }
+  .reviews {
+  margin-right: -20px;
+  font-size: 0.8rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .testimonialSection {
+    padding: 2rem;
+    height: 100vh;
+  }
+
+  .leftSide {
+    margin-top: 20rem;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageWrapper {
+    width: 200px;
+    height: 160px;
+    margin-top: 10px;
+  }
+
+  .customerImage {
+    width: 200px;
+    height: 300px;
+  padding-bottom: 11px;
+  }
+
+  .messagePopup {
+    font-size: 0.9rem;
+    padding: 0.6rem ;
+    bottom: 15px;
+    width: 80%; /* Expand to fit the smaller screen */
+    left: 50%;   /* Adjust horizontal positioning */
+    transform: none; /* Remove centering transform for small screens */
+  }
+
+  .emojis {
+    width: 220px;
+  }
+
+  .mainHeading {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .miniHeading {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .paragraph {
+    font-size: 0.90rem;
+    text-align: center;
+  }
+
+  .roundedImage {
+    width: 37px;
+    height: 37px;
+  }
+
+  .feedbackText {
+    font-size: 0.9rem;
+  }
+
+  .rating {
+    margin-left: 120px;
+  }
+  .reviews {
+  margin-right: -20px;
+  }
+}
