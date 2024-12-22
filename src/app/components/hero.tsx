@@ -88,7 +88,7 @@ const Hero = () => {
       {/* Right Side Image with Green Circle */}
       <div className={styles.heroImage}>
         <div className={styles.greenCircle}>
-          <Image
+          <Image className={styles.img1}
             src="/Intersect.png" // Replace with your image path
             alt="Delicious Meal"
             width={500}

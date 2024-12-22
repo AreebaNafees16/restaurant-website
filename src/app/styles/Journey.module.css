@@ -189,7 +189,7 @@
 @media (max-width: 480px) {
   .container {
     padding: 2rem;
-    height: 130vh;
+    height: 160vh;
   }
 
   .mainHeading {
@@ -207,6 +207,9 @@
 
   .rightSide {
     grid-template-columns: 1fr;
+  }
+  .exploreButton {
+    margin-bottom: 0;
   }
 
   .card {

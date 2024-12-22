@@ -215,8 +215,8 @@
 
 @media (max-width: 480px) {
   .container {
-    margin: 0 15px;
-    height: 125vh;
+    /* margin: 0 15px; */
+    height: 280vh;
   }
 
   .mainHeading {
@@ -225,9 +225,20 @@
   .miniHeading {
     font-size: 0.8rem;
   }
-
+  .arrowWrapper {
+    display: flex;
+    gap: 0rem;
+    align-items: center;
+    color: #fff;
+  }
   .circle {
     margin-left: -11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
   }
 
   .cards {
@@ -236,7 +247,7 @@
   }
 
   .card {
-    width: 190px; /* Full width on small screens */
+    width: 240px; /* Full width on small screens */
     height: 350px;
   }
 
@@ -244,8 +255,8 @@
     /* width: 180px; */
     /* height: 100px; */
     margin-top: 15px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     /* border-radius: 50%; */
   }
 

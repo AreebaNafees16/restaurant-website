@@ -115,7 +115,6 @@
   display: flex;
   align-items: center;
   padding-left: 30px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .logobox {
@@ -130,7 +129,6 @@
 }
 
 .logof {
-  font-family: 'Cursive', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
@@ -256,7 +254,7 @@
     display: none; /* Hide navigation links on mobile */
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 52px;
     left: 0;
     width: 100%;
     background-color: white;

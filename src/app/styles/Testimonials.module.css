@@ -304,7 +304,7 @@
 @media (max-width: 480px) {
   .testimonialSection {
     padding: 2rem;
-    height: 100vh;
+    height: 130vh;
   }
 
   .leftSide {
@@ -319,13 +319,13 @@
   .imageWrapper {
     width: 200px;
     height: 160px;
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .customerImage {
     width: 200px;
     height: 300px;
-  padding-bottom: 11px;
+    margin-top: 1.3rem;
   }
 
   .messagePopup {
@@ -367,7 +367,7 @@
   }
 
   .rating {
-    margin-left: 120px;
+    margin-left: 100px;
   }
   .reviews {
   margin-right: -20px;

@@ -131,7 +131,7 @@
     width: 140vh;
   }
   .footerColumns {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     margin-left: 0;
   }
@@ -141,7 +141,7 @@
     margin-top: 2rem;
   }
   .copyright {
-    margin-right: 20rem;
+    /* margin-right: 20rem; */
     margin-top: 3rem;
   }
 }
@@ -152,7 +152,7 @@
     width: 50vh;
   }
   .footerColumns {
-    grid-template-columns: repeat(2fr);
+    grid-template-columns: repeat(1fr);
     text-align: left;
   }
 
@@ -172,7 +172,8 @@
 @media (max-width: 480px) {
   .footer {
     padding: 2rem;
-    width: 60vh;
+    width: 30px; 
+    margin-right: 4rem;
   }
 
   .footerColumn h4 {
@@ -184,14 +185,13 @@
   }
 
   .copyright {
-    margin-top: 10px;
-    margin-right: 6rem;
+    margin-top: 0px;
   }
 
   .socialIcon {
     width: 30px;
     height: 30px;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
 }
 
