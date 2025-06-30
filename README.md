@@ -18,14 +18,28 @@
 
 ## 📁 Folder Structure
 
-restaurant-template/
-├── public/ # Static assets (images, favicon, etc.)
-├── pages/ # Main website pages
-├── components/ # Reusable UI components
-├── styles/ # Custom CSS styles
-├── README.md # Usage instructions
-├── package.json # Project configuration
-└── next.config.js # Next.js config
+bistrox-nextjs-template/
+│
+├── restaurant-template/          → Your actual Next.js project
+│   ├── pages/
+│   ├── public/
+│   ├── components/
+│   ├── styles/
+│   ├── package.json
+│   ├── next.config.js (if any)
+│   └── README.md (basic usage instructions)
+│
+├── documentation/
+│   └── index.html                → How to install & customize
+│
+├── preview/
+│   ├── thumbnail.jpg             → 590x300 (required)
+│   ├── preview1.jpg              → Home page screenshot
+│   └── preview2.jpg              → Menu/Contact/etc.
+│
+├── license.txt                   → ThemeForest Regular License
+└── README.txt                    → Optional plain-text version
+
 
 bash
 Copy
