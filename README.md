@@ -58,9 +58,16 @@ Netlify
 
 Any Node.js supported server
 
-📸 Screenshots
-![Preview](./preview/preview2.png/preview3.png)
+## 📸 Screenshots
 
+### 🏠 Homepage
+![Homepage](./preview/preview2.png)
+
+### 🍽️ Menu Section
+![Menu](./preview/preview3.png)
+
+### 🖼️ ThemeForest Thumbnail
+![Thumbnail](./preview/thumbnail.jpg)
 
 
 📄 License
