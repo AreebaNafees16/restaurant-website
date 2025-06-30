@@ -59,7 +59,7 @@ Netlify
 Any Node.js supported server
 
 📸 Screenshots
-![Preview](./preview/preview1.png)
+![Preview](./preview/preview2.png/preview3.png)
 
 
 
