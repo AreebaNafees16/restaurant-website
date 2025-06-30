@@ -1,6 +1,6 @@
 # BistroX – Modern Restaurant Website Template (Next.js + Custom CSS)
 
-![Preview](./preview/preview1.jpg)
+![Preview](./preview/preview1.png)
 
 ## ✨ Overview
 
