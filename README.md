@@ -38,7 +38,8 @@
 │   └── preview2.jpg              → Menu/Contact/etc.
 │
 ├── license.txt                   → ThemeForest Regular License
-└── README.txt                    → Optional plain-text version```
+└── README.txt                    → Optional plain-text version
+```
 
 
 ## 💻 Installation
@@ -58,7 +59,7 @@ Netlify
 Any Node.js supported server
 
 📸 Screenshots
-Add screenshots inside a preview/ folder in your repo and reference here.
+![Preview](./preview/preview1.png)
 
 
 
