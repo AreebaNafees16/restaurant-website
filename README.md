@@ -1,37 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BistroX – Modern Restaurant Website Template (Next.js + Custom CSS)
 
-## Getting Started
+![Preview](./preview/preview1.jpg)
 
-First, run the development server:
+## ✨ Overview
 
-```bash
+**BistroX** is a professionally designed, fully responsive restaurant website template built with **Next.js** and **custom CSS**. It's perfect for restaurants, cafes, food delivery services, or any dining-related businesses.
+
+## 🚀 Features
+
+- Built with **Next.js**
+- Custom CSS (no frameworks)
+- Fully responsive (mobile/tablet/desktop)
+- Smooth animations
+- Clean and modular code
+- Easy to customize
+- SEO-friendly
+
+## 📁 Folder Structure
+
+restaurant-template/
+├── public/ # Static assets (images, favicon, etc.)
+├── pages/ # Main website pages
+├── components/ # Reusable UI components
+├── styles/ # Custom CSS styles
+├── README.md # Usage instructions
+├── package.json # Project configuration
+└── next.config.js # Next.js config
+
+bash
+Copy
+Edit
+
+## 💻 Installation
+
+``bash
+git clone https://github.com/AreebaNafees16/restaurant-website.git
+cd restaurant-website
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit: http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🌐 Deployment
+You can deploy this template easily to:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Netlify
 
-## Learn More
+Any Node.js supported server
 
-To learn more about Next.js, take a look at the following resources:
+📸 Screenshots
+Add screenshots inside a preview/ folder in your repo and reference here.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+📄 License
+This project is licensed under the Envato Market Regular License – for ThemeForest sale.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# restaurant-website
+🙋‍♀️ Author
+Designed & Developed by Areeba Nafees
+Follow for more Next.js templates and frontend projects.
