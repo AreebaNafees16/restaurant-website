@@ -38,12 +38,8 @@
 │   └── preview2.jpg              → Menu/Contact/etc.
 │
 ├── license.txt                   → ThemeForest Regular License
-└── README.txt                    → Optional plain-text version
+└── README.txt                    → Optional plain-text version```
 
-
-bash
-Copy
-Edit
 
 ## 💻 Installation
 
