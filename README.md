@@ -33,12 +33,10 @@ Edit
 
 ## 💻 Installation
 
-``bash
-git clone https://github.com/AreebaNafees16/restaurant-website.git
-cd restaurant-website
-npm install
-npm run dev
-Visit: http://localhost:3000
+## Installation
+1. `npm install`
+2. `npm run dev`
+3. Open http://localhost:3000
 
 🌐 Deployment
 You can deploy this template easily to:
