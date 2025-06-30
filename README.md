@@ -18,7 +18,7 @@
 
 ## 📁 Folder Structure
 
-bistrox-nextjs-template/
+```bistrox-nextjs-template/
 │
 ├── restaurant-template/          → Your actual Next.js project
 │   ├── pages/
