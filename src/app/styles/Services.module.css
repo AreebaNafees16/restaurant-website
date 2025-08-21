@@ -2,7 +2,7 @@
   .servicesContainer {
     background-color: var(--white);
     font-family: 'Arial', sans-serif;
-    padding: 4rem;
+    padding: 1.25rem;
   }
 
 /* Hero Section */
@@ -161,9 +161,9 @@
 
   
    /* Default: Desktop First (Large Screens 1920px+) */
-body {
+/* body {
   font-size: 18px;
-}
+} */
 
 /* 1600px - 1919px */
 @media (max-width: 1919px) {

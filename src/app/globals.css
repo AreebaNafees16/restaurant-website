@@ -18,6 +18,13 @@ html, body {
 }
 
 
+
+  
+   /* Default: Desktop First (Large Screens 1920px+) */
+body {
+  font-size: 18px;
+}
+
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities;
