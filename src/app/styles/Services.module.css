@@ -144,81 +144,160 @@
   100% { opacity: 1; }
 }
 
-/* ✅ Responsive Font Sizes (fixed with :global) */
+/* ✅ Responsive code */
+/* ===========================
+   Global Responsive Styles
+   =========================== */
 
-/* 1600px - 1919px */
-@media (max-width: 1919px) {
-  :global(body) {
-    font-size: 17px;
-  }
-}
-
-/* 1440px - 1599px */
-@media (max-width: 1599px) {
-  :global(body) {
-    font-size: 16px;
-  }
-}
-
-/* 1366px - 1439px */
-@media (max-width: 1439px) {
-  :global(body) {
-    font-size: 15px;
-  }
-}
-
-/* 1280px - 1365px */
-@media (max-width: 1365px) {
-  :global(body) {
-    font-size: 15px;
-  }
-}
-
-/* Tablets (768px - 1024px) */
-@media (max-width: 1024px) {
-  .servicesSection {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
+/* Default (large desktops ≥1920px) */
+@media (min-width: 1920px) {
   .heroSection h1 {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
+  }
+  .heroSection p,
+  .serviceDescription {
+    font-size: 1.4rem;
+  }
+  .serviceTitle {
+    font-size: 2rem;
+  }
+  .ctaHeading {
+    font-size: 3.2rem;
+  }
+  .ctaText {
+    font-size: 1.5rem;
+  }
+}
+
+/* 1600px – 1919px (20–23" Desktops) */
+@media (max-width: 1919px) and (min-width: 1600px) {
+  .heroSection h1 {
+    font-size: 3rem;
+  }
+  .serviceTitle {
+    font-size: 1.9rem;
+  }
+}
+
+/* 1440px – 1599px (19–22" Desktops) */
+@media (max-width: 1599px) and (min-width: 1440px) {
+  .heroSection h1 {
+    font-size: 2.8rem;
+  }
+  .serviceTitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* 1366px – 1439px (15" Notebooks) */
+@media (max-width: 1439px) and (min-width: 1366px) {
+  .heroSection h1 {
+    font-size: 2.6rem;
+  }
+  .serviceTitle {
+    font-size: 1.6rem;
   }
   .ctaHeading {
     font-size: 2.4rem;
   }
 }
 
-/* Small Tablets & Large Mobiles (600px - 767px) */
-@media (max-width: 767px) {
-  .heroSection {
-    padding: 1.5rem;
+/* 1024px – 1359px (iPad Pro / small notebooks) */
+@media (max-width: 1359px) and (min-width: 1024px) {
+  .heroSection h1 {
+    font-size: 2.3rem;
+  }
+  .heroSection p {
+    font-size: 1.1rem;
+  }
+  .serviceTitle {
+    font-size: 1.5rem;
+  }
+  .ctaHeading {
+    font-size: 2.2rem;
+  }
+}
+
+/* 768px – 1023px (iPads, Kindle, tablets) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .servicesSection {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 3rem 1.5rem;
   }
   .heroSection h1 {
     font-size: 2rem;
-    margin-top: 2rem;
   }
-  .servicesSection {
-    grid-template-columns: 1fr;
+  .serviceTitle {
+    font-size: 1.4rem;
   }
   .ctaHeading {
     font-size: 2rem;
   }
-  .ctaButton {
-    width: 100%;
-  }
 }
 
-/* Mobiles (up to 480px) */
-@media (max-width: 480px) {
+/* 600px – 767px (small tablets, Nexus 7) */
+@media (max-width: 767px) and (min-width: 600px) {
+  .heroSection {
+    padding: 2rem 1.5rem;
+  }
   .heroSection h1 {
     font-size: 1.8rem;
   }
+  .serviceTitle {
+    font-size: 1.3rem;
+  }
+  .ctaHeading {
+    font-size: 1.8rem;
+  }
+}
+
+/* 480px – 599px (small devices, Galaxy S5, iPhone Plus) */
+@media (max-width: 599px) and (min-width: 480px) {
+  .heroSection {
+    padding: 1.5rem;
+  }
+  .heroSection h1 {
+    font-size: 1.6rem;
+  }
+  .serviceTitle {
+    font-size: 1.2rem;
+  }
+  .ctaHeading {
+    font-size: 1.6rem;
+  }
+}
+
+/* ≤479px (iPhone 4, 5, 6, SE, very small screens) */
+@media (max-width: 479px) {
+  .heroSection {
+    padding: 1rem;
+  }
+  .heroSection h1 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
   .heroSection p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  .servicesSection {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  .serviceTitle {
+    font-size: 1.1rem;
   }
   .serviceDescription {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  .ctaHeading {
+    font-size: 1.4rem;
   }
   .ctaText {
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+  .ctaButton {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
   }
 }
