@@ -56,17 +56,28 @@
   }
   /* Cards */
   .cards {
-    display: grid;
+      display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.7rem;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; */
   }
 
   
   
   .card {
-    width: 300px;
+      width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+    /* width: 300px;
     height: 450px;
     background: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -77,7 +88,7 @@
     justify-content: space-between;
     margin-left: 20px;
     position: relative;
-    margin: 0;
+    margin: 0; */
   }
   
   .cardHeart {
@@ -98,9 +109,15 @@
   }
   
   .cardImage {
-    width: 266px;
+    /* width: 266px;
     height: 266px;
-    border-radius: 50%;
+    border-radius: 50%; */
+      width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
   }
   
   .cardTitle {
@@ -142,134 +159,73 @@
   
 
 /* Responsive Styles */
+
+/* ---------- Responsive Queries ---------- */
+
+/* 1440px - 1920px (Big desktops) */
+@media (max-width: 1920px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 1366px - 1440px (Laptops) */
+@media (max-width: 1440px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 1024px - 1366px (iPads, small notebooks) */
+@media (max-width: 1366px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 768px - 1024px (Tablets, Kindle, iPad Mini, Nexus 9) */
 @media (max-width: 1024px) {
-  .container {
-    height: 100vh;
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
   }
   .mainHeading {
-    font-size: 2rem; /* Scale down heading */
-  }
-  .miniHeading {
-    font-size: 0.9rem;
-  }
-
-  .cards {
-    grid-template-columns: repeat(2, 1fr); /* Smaller cards for tablets */
-  }
-
-  .card {
-    max-width: 300px;
+    font-size: 2rem;
   }
 }
 
+/* 600px - 768px (Small tablets, Nexus 7, iPad Mini portrait) */
 @media (max-width: 768px) {
-
-  .container {
-    margin: 0 15px;
-    height: 210vh;
-  }
-
-  .mainHeading {
-    font-size: 1.8rem; /* Further scaling for smaller devices */
-  }
-  .miniHeading {
-    font-size: 0.85rem;
-    margin-top: 25rem;
-  }
-
-  .arrowWrapper {
-    flex-wrap: wrap; /* Wrap icons if needed */
-  }
-
-  .card {
-    width: 250px;
-    height: 360px;
-  }
-
   .cards {
-    display: grid;
-    grid-template-columns:  (3, 1fr);
-    gap: 1.9rem;
+    grid-template-columns: 1fr;
   }
-
-  .cardImage {
-    width: 210px;
-    height: 210px;
-    margin-top: 20px;
-    padding-right: 15px;
-  }
-
-  .cardTitle {
-    font-size: 1.3rem;
-  }
-
-  .cardDescription {
-    font-size: 0.9rem;
-  }
-
-  .price,
-  .rating {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    /* margin: 0 15px; */
-    height: 280vh;
-  }
-
   .mainHeading {
     font-size: 1.8rem;
   }
-  .miniHeading {
-    font-size: 0.8rem;
-  }
-  .arrowWrapper {
-    display: flex;
-    gap: 0rem;
-    align-items: center;
-    color: #fff;
-  }
-  .circle {
-    margin-left: -11px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
+}
 
+/* 480px - 600px (Mobiles like Galaxy, iPhone 6/7/8 Plus) */
+@media (max-width: 600px) {
   .cards {
-    grid-template-columns:  repeat(auto-fit, minmax(170px, 2fr)); /* Single column for mobile */
-    gap: 1.7rem;
+    grid-template-columns: 1fr;
   }
-
   .card {
-    width: 240px; /* Full width on small screens */
-    height: 350px;
+    max-width: 100%;
   }
+  .mainHeading {
+    font-size: 1.5rem;
+  }
+}
 
-  .cardImage {
-    /* width: 180px; */
-    /* height: 100px; */
-    margin-top: 15px;
-    width: 200px;
-    height: 200px;
-    /* border-radius: 50%; */
+/* 320px - 480px (Small mobiles like iPhone 4/5/SE) */
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
   }
-
-  .cardTitle {
-    font-size: 1.4rem;
+  .card {
+    padding: 0.5rem;
+    border-radius: 15px;
   }
-
-  .cardDescription {
-    font-size: 0.95rem;
+  .mainHeading {
+    font-size: 1.2rem;
   }
-
-  .price,
-  .rating {
-    font-size: 1rem;
-  }
-}  
+}

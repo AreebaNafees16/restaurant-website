@@ -1,10 +1,16 @@
 .testimonialSection {
-    display: flex;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85vh;
+  padding: 3rem;
+  gap: 2rem;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
     height: 85vh;
     padding: 3rem;
-    gap: 2rem;
+    gap: 2rem; */
     /* background-color: #f9f9f9; */
   }
   
@@ -154,222 +160,95 @@
 
 /* Responsive Styles */
 
-/* Tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
+
+/* ✅ Big desktops (up to 1600px) */
+@media (max-width: 1600px) {
   .testimonialSection {
-    height: 130vh;
-    flex-direction: column;
-    padding: 2rem;
-    gap: 1rem;
+    padding: 2.5rem;
+    gap: 1.5rem;
   }
-  .leftSide {
-  margin-top: 26rem;
+  .mainHeading {
+    font-size: 2.2rem;
   }
+}
 
-  .imageWrapper {
-    width: 250px;
-    height: 200px;
+/* ✅ Standard laptop screens (1366px, 1440px) */
+@media (max-width: 1440px) {
+  .testimonialSection {
+    flex-direction: row;
+    height: auto;
   }
-
+  .mainHeading {
+    font-size: 2rem;
+  }
   .customerImage {
     width: 250px;
-    height: 350px;
-    margin-bottom: 150px;
+    height: 380px;
   }
+}
 
-  .emojis {
-    width: 250px;
+/* ✅ Small laptops & notebooks (1024px – 1280px) */
+@media (max-width: 1280px) {
+  .testimonialSection {
+    flex-direction: column;
+    text-align: center;
   }
+  .rightSide {
+    margin-top: 2rem;
+  }
+  .customerImage {
+    margin: 0 auto;
+  }
+}
 
+/* ✅ Tablets (iPad, Kindle, 768px – 1024px) */
+@media (max-width: 1024px) {
+  .testimonialSection {
+    padding: 2rem;
+  }
   .mainHeading {
     font-size: 1.8rem;
   }
-
-  .miniHeading {
-    font-size: 0.9rem;
-  }
-
   .paragraph {
     font-size: 0.95rem;
   }
-  
-
-  .messagePopup{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    background-color: #fff;
-    color: #202020;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 0.5rem 1rem;
-    border-radius: 30px;
-    width: 12rem;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .messagePopup::after {
-    content: '';
-    position: absolute;
-    top: -20px; /* Position the tip below the popup */
-    left: 5%; /* Center horizontally */
-    transform: translateX(-50%); /* Center the tip */
-    width: 2px;
-    height: 10px;
-    border-left: 0px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 15px solid white; /* Tip color matches popup background */
-  }
-  
-  .roundedImage {
-    width: 40px;
-    height: 40px;
-  }
-
-  .feedbackText {
-    font-size: 0.9rem;
-  }
-  .emojis {
-    width: 270px;
-  }
-
-  .rating {
-    margin-left: 140px;
-  }
-  .reviews {
-  margin-right: -20px;
+  .customerImage {
+    width: 220px;
+    height: 320px;
   }
 }
 
-/* Mobile (max-width: 768px) */
-@media (max-width: 768px) {
+/* ✅ Small tablets & large phones (600px – 767px) */
+@media (max-width: 767px) {
   .testimonialSection {
-    align-items: center;
-    height: 90vh;
+    flex-direction: column;
     padding: 1.5rem;
   }
-
-  .imageWrapper {
-    width: 260px;
-    height: 210px;
-  }
-
-  .rightSide {
-    text-align: center;
-  }
-  .customerImage {
-    width: 250px;
-    height: 370px;
-    margin-bottom: 160px;
-  }
-
-  .emojis {
-    width: 290px;
-  }
-
   .mainHeading {
     font-size: 1.6rem;
   }
-
-  .miniHeading {
-    font-size: 0.85rem;
-  }
-
-  .messagePopup {
-    font-size: 0.9rem;
-    padding: 0.6rem ;
-    bottom: 39px;
-    width: 60%; /* Expand to fit the smaller screen */
-    left: 50%;   /* Adjust horizontal positioning */
-    transform: none; /* Remove centering transform for small screens */
-  }
-
-  .rating {
-    margin-left: 135px;
-  }
-  .reviews {
-  margin-right: -20px;
-  font-size: 0.8rem;
-  }
-
-  .paragraph {
-    font-size: 0.9rem;
+  .feedback {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
 
-/* Small Mobile (max-width: 480px) */
+/* ✅ Mobile (iPhones, Galaxy, < 480px) */
 @media (max-width: 480px) {
   .testimonialSection {
-    padding: 2rem;
-    height: 130vh;
+    padding: 1rem;
   }
-
-  .leftSide {
-    margin-top: 20rem;
-    position: relative;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .imageWrapper {
-    width: 200px;
-    height: 160px;
-    margin-bottom: 10px;
-  }
-
-  .customerImage {
-    width: 200px;
-    height: 300px;
-    margin-top: 1.3rem;
-  }
-
-  .messagePopup {
-    font-size: 0.9rem;
-    padding: 0.6rem ;
-    bottom: 15px;
-    width: 80%; /* Expand to fit the smaller screen */
-    left: 50%;   /* Adjust horizontal positioning */
-    transform: none; /* Remove centering transform for small screens */
-  }
-
-  .emojis {
-    width: 220px;
-  }
-
   .mainHeading {
-    font-size: 1.7rem;
-    text-align: center;
-    margin-top: 30px;
+    font-size: 1.4rem;
   }
-
-  .miniHeading {
-    font-size: 0.8rem;
-    text-align: center;
-  }
-
   .paragraph {
-    font-size: 0.90rem;
-    text-align: center;
-  }
-
-  .roundedImage {
-    width: 37px;
-    height: 37px;
-  }
-
-  .feedbackText {
     font-size: 0.9rem;
   }
-
-  .rating {
-    margin-left: 100px;
+  .customerImage {
+    width: 180px;
+    height: 260px;
   }
-  .reviews {
-  margin-right: -20px;
+  .emoji {
+    font-size: 1.2rem;
   }
 }

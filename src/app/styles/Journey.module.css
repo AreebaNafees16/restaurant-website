@@ -1,11 +1,19 @@
-.container {
+/* .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 2rem;
+    padding: 2rem 4rem;
     height: 70vh;
     gap: 2rem;
-  }
+  } */
+
+  .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 4rem;
+  gap: 2rem;
+}
   
   /* Left Side */
   .leftSide {
@@ -107,127 +115,99 @@
 
 /* Responsive Styles */
 
-/* Tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
-  .container {
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
 
-  .leftSide {
-    max-width: 100%;
-    margin-left: 0;
-    text-align: center;
-  }
-
+/* Large Desktops (22" - 20" - 19") */
+@media (max-width: 1680px) {
   .mainHeading {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
-
-  .description {
-    font-size: 0.9rem;
-  }
-
-  .rightSide {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin-right: 0;
-    margin-top: 0;
-  }
-
   .card {
     width: 180px;
     height: 210px;
   }
 }
 
-/* Mobile (max-width: 768px) */
-@media (max-width: 768px) {
+/* Laptops (1366px - 1440px) */
+@media (max-width: 1440px) {
   .container {
-    padding: 1.5rem;
-    height: 100vh;
+    flex-direction: row;
+    padding: 2rem;
   }
-
-  .mainHeading {
-    font-size: 1.8rem;
+  .leftSide {
+    max-width: 45%;
   }
-
-  .description {
-    font-size: 0.85rem;
-  }
-
-  .rightSide {
-    grid-template-columns: repeat(2fr);
-    gap: 1rem;
-    margin-bottom: 20px;
-  }
-
   .card {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    padding: 1rem;
-  }
-
-  .cardIcon {
-    width: 50px;
-    height: 50px;
-  }
-
-  .cardName {
-    font-size: 1rem;
-  }
-
-  .cardDescription {
-    font-size: 0.85rem;
+    width: 160px;
+    height: 200px;
   }
 }
 
-/* Small Mobile (max-width: 480px) */
-@media (max-width: 480px) {
+/* Tablets (1024px - 1280px e.g. iPad, iPad Pro, Kindle, Nexus 9) */
+@media (max-width: 1024px) {
   .container {
-    padding: 2rem;
-    height: 160vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+  .leftSide {
+    max-width: 80%;
+    margin-left: 0;
+  }
+  .rightSide {
+    margin: 2rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 0;
+  }
+  .card {
+    width: 150px;
+    height: 190px;
+  }
+}
 
+/* Small Tablets (768px - iPad Mini, Nexus 7, Kindle) */
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 2rem;
+  }
+  .rightSide {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+  .card {
+    width: 140px;
+    height: 180px;
+  }
+}
+
+/* Large Mobiles (414px - iPhone 6/7/8 Plus, Google Pixel, Nexus 5) */
+@media (max-width: 414px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .leftSide {
+    max-width: 100%;
+  }
+  .rightSide {
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+  }
   .mainHeading {
     font-size: 1.8rem;
   }
+}
 
-  .description {
-    font-size: 0.9rem;
+/* Small Mobiles (320px - iPhone 4, iPhone 5) */
+@media (max-width: 320px) {
+  .mainHeading {
+    font-size: 1.5rem;
   }
-
-  .exploreButton {
-    padding: 0.7rem 1.6rem;
-    font-size: 1rem;
-  }
-
-  .rightSide {
-    grid-template-columns: 1fr;
-  }
-  .exploreButton {
-    margin-bottom: 0;
-  }
-
   .card {
     width: 100%;
-    padding: 0.8rem;
-    margin-top: 10px;
-  }
-
-  .cardIcon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .cardName {
-    font-size: 1rem;
-  }
-
-  .cardDescription {
-    font-size: 0.80rem;
+    height: auto;
   }
 }
