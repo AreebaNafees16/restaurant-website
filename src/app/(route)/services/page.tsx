@@ -16,12 +16,12 @@ const Services = () => {
     {
       title: "Event Catering",
       description: "Let us handle your next event with our customized catering service to fit your needs.",
-      image: "/Event Catering.jpeg",
+      image: "/Event-Catering.jpeg",
     },
     {
       title: "Private Dining",
       description: "Book our exclusive private dining rooms for intimate gatherings and special occasions.",
-      image: "/private dining.jpg",
+      image: "/dining.jpg",
     },
   ];
 

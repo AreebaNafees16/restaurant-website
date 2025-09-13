@@ -3,7 +3,7 @@
 .centerSection {
   text-align: center;
   padding: 2rem;
-  height: 80vh;
+  height: 75vh;
 }
 
 .smallHeading {
@@ -89,102 +89,118 @@
 
 /* Responsive Styles */
 
-/* Default styles (for large screens 1920px and above) */
-@media (min-width: 1600px) {
-  .largeHeading {
-    font-size: 3rem;
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+  .centerSection {
+    height: 55vh;
+    /* margin-top: 10rem; */
   }
-  .card {
-    width: 320px;
-    height: 320px;
-  }
+
+
+
 }
 
-/* For desktops between 1440px - 1599px */
-@media (max-width: 1599px) and (min-width: 1440px) {
-  .largeHeading {
-    font-size: 2.8rem;
+@media (max-width: 1024px) {
+  .centerSection {
+    height: 80vh;
+    margin-top: 20rem;
   }
-  .card {
-    width: 300px;
-    height: 300px;
-  }
-}
 
-/* For laptops 1366px - 1439px */
-@media (max-width: 1439px) and (min-width: 1200px) {
   .largeHeading {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Scale down for smaller desktops */
   }
-  .card {
-    width: 280px;
-    height: 280px;
+  .smallHeading {
+    font-size: 0.95rem;
   }
-}
 
-/* For tablets like iPad Pro (1024px - 1199px) */
-@media (max-width: 1199px) and (min-width: 992px) {
-  .largeHeading {
-    font-size: 2.2rem;
-  }
   .card {
-    width: 250px;
-    height: 250px;
-  }
-}
-
-/* For iPads, Tablets (768px - 991px) */
-@media (max-width: 991px) and (min-width: 768px) {
-  .largeHeading {
-    font-size: 2rem;
+    width: 260px;
+    height: 260px;
   }
   .cardGrid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-  .card {
-    width: 220px;
-    height: 220px;
+    gap: 2rem;
+    grid-template-columns: repeat( 2fr);
   }
 }
 
-/* For small tablets & large phones (600px - 767px) */
-@media (max-width: 767px) and (min-width: 600px) {
+@media (max-width: 768px) {
+
+  .centerSection {
+    height: 95vh;
+  }
+
   .largeHeading {
-    font-size: 1.8rem;
+    font-size: 2rem; /* Scale down for tablets */
   }
-  .cardGrid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  .smallHeading {
+    font-size: 0.9rem;
+    margin-top: 22rem;
   }
+
+ .cardGrid {
+  gap: 1rem;
+  }
+
   .card {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
+  }
+
+  .imageWrapper {
+    width: 100px;
+    height: 100px; /* Smaller image wrapper */
   }
 }
 
-/* For phones like iPhone 6/7/8, Pixel, Samsung (375px - 599px) */
-@media (max-width: 599px) and (min-width: 375px) {
+@media (max-width: 480px) {
+
+  .centerSection {
+    height: auto;
+    margin-top: 40px;
+  }
+
   .largeHeading {
-    font-size: 1.6rem;
+    font-size: 1.8rem; /* Scale further for mobile */
   }
-  .cardGrid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  .smallHeading {
+    font-size: 0.8rem;
+    margin-top: 2rem;
   }
+
   .card {
-    width: 180px;
-    height: 180px;
+    width: 240px;
+    height: 240px; /* Smaller cards */
+  }
+
+  .cardGrid {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  }
+
+  .imageWrapper {
+    width: 90px;
+    height: 90px; /* Even smaller image */
+  }
+
+  .roundedImage {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cardTitle {
+    font-size: 1.3rem; /* Smaller text */
+  }
+
+  .cardSubtitle {
+    font-size: 0.8rem;
   }
 }
 
-/* For very small phones (320px - 374px) */
-@media (max-width: 374px) {
-  .largeHeading {
-    font-size: 1.4rem;
-  }
-  .cardGrid {
-    grid-template-columns: 1fr;
-  }
-  .card {
-    width: 160px;
-    height: 160px;
-  }
-}
+
+
+
+
+
+

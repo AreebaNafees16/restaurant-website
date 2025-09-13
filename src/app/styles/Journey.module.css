@@ -13,6 +13,7 @@
   align-items: flex-start;
   padding: 2rem 4rem;
   gap: 2rem;
+  height: 70vh;
 }
   
   /* Left Side */
@@ -125,6 +126,9 @@
     width: 180px;
     height: 210px;
   }
+  /* .container {
+    height: 65vh;
+  } */
 }
 
 /* Laptops (1366px - 1440px) */
@@ -184,6 +188,7 @@
   .container {
     flex-direction: column;
     padding: 1rem;
+    height: auto;
   }
   .leftSide {
     max-width: 100%;
@@ -203,11 +208,17 @@
 
 /* Small Mobiles (320px - iPhone 4, iPhone 5) */
 @media (max-width: 320px) {
+
+  .container {
+    height: auto;
+  }
   .mainHeading {
     font-size: 1.5rem;
   }
   .card {
     width: 100%;
     height: auto;
+    
+    
   }
 }

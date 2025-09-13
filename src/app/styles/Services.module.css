@@ -271,6 +271,7 @@
 @media (max-width: 479px) {
   .heroSection {
     padding: 1rem;
+    margin-top: 2rem;
   }
   .heroSection h1 {
     font-size: 1.4rem;

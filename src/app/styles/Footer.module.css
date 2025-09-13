@@ -1,6 +1,6 @@
 .footer {
   background-color: #fff;
-  padding: 5rem 2rem;
+  padding: 5rem 3rem;
   color: #333;
   width: 100%; /* full width, responsive */
 }
@@ -124,6 +124,9 @@
 }
 
 @media (max-width: 480px) {
+  .footer {
+    height: auto;
+  }
   .footerColumns {
     grid-template-columns: 1fr;
   }

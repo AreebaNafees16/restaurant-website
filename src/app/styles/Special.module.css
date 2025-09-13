@@ -1,9 +1,9 @@
 .container {
     padding: 2rem;
-    height: 90vh;
+    height: 95vh;
     margin-left: 40px;
     margin-right: 30px;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
 
   }
   
@@ -76,9 +76,9 @@
   height: auto;
   border-radius: 50%;
   object-fit: cover;
-  margin: auto;
-    /* width: 300px;
-    height: 450px;
+  /* margin: auto; */
+    width: 300px;
+    height: 400px;
     background: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
@@ -86,9 +86,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 20px;
+    margin-left: 0px;
     position: relative;
-    margin: 0; */
+    margin: 0;
   }
   
   .cardHeart {
@@ -163,9 +163,16 @@
 /* ---------- Responsive Queries ---------- */
 
 /* 1440px - 1920px (Big desktops) */
-@media (max-width: 1920px) {
+@media (max-width: 1200px) {
   .cards {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .container {
+    padding: 2rem;
+    height: 60vh;
+    margin-left: 40px;
+    margin-right: 30px;
   }
 }
 
@@ -205,11 +212,18 @@
 
 /* 480px - 600px (Mobiles like Galaxy, iPhone 6/7/8 Plus) */
 @media (max-width: 600px) {
+  .container {
+    /* padding: 1rem; */
+    height: auto;
+    margin-left: 10px;
+    margin-right: 0;
+  }
   .cards {
     grid-template-columns: 1fr;
+    
   }
   .card {
-    max-width: 100%;
+    max-width: 80%;
   }
   .mainHeading {
     font-size: 1.5rem;
@@ -218,12 +232,22 @@
 
 /* 320px - 480px (Small mobiles like iPhone 4/5/SE) */
 @media (max-width: 480px) {
+
+  .container {
+    margin-left: 0px;
+    padding: 1rem;
+    margin-left: 0px;
+    height: auto;
+    margin-bottom: 2rem;
+  }
   .cards {
     grid-template-columns: 1fr;
+  
   }
   .card {
     padding: 0.5rem;
     border-radius: 15px;
+    width: 95%;
   }
   .mainHeading {
     font-size: 1.2rem;

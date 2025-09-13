@@ -65,7 +65,7 @@
     content: '';
     position: absolute;
     top: -20px; /* Position the tip below the popup */
-    left: 5%; /* Center horizontally */
+    left: 8%; /* Center horizontally */
     transform: translateX(-50%); /* Center the tip */
     width: 2px;
     height: 10px;
@@ -160,6 +160,12 @@
 
 /* Responsive Styles */
 
+@media (max-width: 1200px) {
+  .testimonialSection {
+   height: 65vh;
+   margin-bottom: 0px;
+  }
+}
 
 /* ✅ Big desktops (up to 1600px) */
 @media (max-width: 1600px) {
@@ -230,13 +236,30 @@
   .feedback {
     flex-direction: column;
     gap: 0.5rem;
+    
   }
+
+  .feedbackText {
+    font-size: 0.9rem;
+    
+  }
+
+  .rating {
+    display: block;
+    gap: 20px;
+  }
+  
+   .reviews {
+    display: block;
+  }
+
 }
 
 /* ✅ Mobile (iPhones, Galaxy, < 480px) */
 @media (max-width: 480px) {
   .testimonialSection {
     padding: 1rem;
+    height: auto;
   }
   .mainHeading {
     font-size: 1.4rem;
@@ -247,8 +270,26 @@
   .customerImage {
     width: 180px;
     height: 260px;
+    margin-bottom: 30px;
   }
   .emoji {
     font-size: 1.2rem;
+  }
+  .feedbackText {
+    font-size: 1rem;
+    
+  
+  }
+  .reviews {
+    display: block;
+     gap: 20px;
+  }
+  .rating {
+    display: block;
+     margin-right: -40px;
+  }
+
+  .messagePopup {
+    font-size: 0.8rem;
   }
 }
