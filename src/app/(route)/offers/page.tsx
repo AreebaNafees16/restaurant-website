@@ -18,7 +18,7 @@ const Offers = () => {
     {
       title: "Weekend Brunch",
       description: "Get a free dessert with any brunch order on weekends. Limited time offer, don’t miss it!",
-      image: "/weekend-brunch.jpg",
+      image: "/Weekend-Brunch.jpg",
   
     },
     {
